@@ -21,6 +21,12 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+        Schema::create('cars', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('make');
+            $table->string('model');
+            $table->string('year');
+        });
     }
 
     /**
