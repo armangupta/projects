@@ -26,4 +26,11 @@ class CarsTest extends TestCase
         $car->year='1996';
         $this->assertTrue($car->save());
     }
+    public function testCarYearUpdate()
+    {
+        $car=Cars::find(5);
+        dd($car);
+        $car->year='2000';
+        $this->assertTrue($car->save());
+    }
 }
