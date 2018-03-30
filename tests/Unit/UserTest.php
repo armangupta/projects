@@ -20,31 +20,31 @@ class UserTest extends TestCase
     {
         $this->assertTrue(true);
     }
-    public function testUserTest()
-    {
-        $user=new User();
-        $user->name='john';
-        $user->email='abcdsaef@gmail.com';
-        $user->password='$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm';
-        $user->remember_token=str_random(10);
-        $this->assertTrue($user->save());
-    }
-    public function testUpdateUser()
-    {
-        $user= User::find(26);
-        $user->name = 'Steve Smith';
-        $user->save();
-        $this->assertTrue($user->update());
-    }
-    public function testDeleteUser()
-    {
-        $user= User::find(15);
-        $this->assertTrue($user->delete());
-    }
-        public function testCountUser(){
-        $user=User::all();
-        $count=$user->count();
-        $this->assertTrue($count==50);
-        }
+//    public function testUserTest()
+//    {
+//        $user=new User();
+//        $user->name='john';
+//        $user->email='abcdsaef@gmail.com';
+//        $user->password='$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm';
+//        $user->remember_token=str_random(10);
+//        $this->assertTrue($user->save());
+//    }
+//    public function testUpdateUser()
+//    {
+//        $user = User::find(26);
+//        $user->name = 'Steve Smith';
+//        $user->save();
+//        $this->assertTrue($user->update());
+//    }
+//    public function testDeleteUser()
+//    {
+//        $user= User::find(15);
+//        $this->assertTrue($user->delete());
+//    }
+//        public function testCountUser(){
+//        $user=User::all();
+//        $count=$user->count();
+//        $this->assertTrue($count==50);
+//        }
 
 }
