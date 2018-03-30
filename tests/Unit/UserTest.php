@@ -36,12 +36,11 @@ class UserTest extends TestCase
         $user->save();
         $this->assertTrue($user->update());
     }
-//    public function testDeleteUser()
-//    {
-//        $user= User::find(15);
-//        dd($user);
-//        $this->assertTrue($user->delete());
-//    }
+    public function testDeleteUser()
+    {
+        $user= User::find(15);
+        $this->assertTrue($user->delete());
+    }
 //        public function testCountUser(){
 //        $user=User::all();
 //
