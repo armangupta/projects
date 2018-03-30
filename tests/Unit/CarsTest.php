@@ -32,4 +32,9 @@ class CarsTest extends TestCase
         $car->year='2000';
         $this->assertTrue($car->save());
     }
+    public function testDeleteCar()
+    {
+        $car= User::find(15);
+        $this->assertTrue($car->delete());
+    }
 }
