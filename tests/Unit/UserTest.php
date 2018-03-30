@@ -41,12 +41,10 @@ class UserTest extends TestCase
         $user= User::find(15);
         $this->assertTrue($user->delete());
     }
-//        public function testCountUser(){
-//        $user=User::all();
-//
-//        $count=$user->count();
-//
-//            $this->assertTrue($count==50);
-//        }
+        public function testCountUser(){
+        $user=User::all();
+        $count=$user->count();
+        $this->assertTrue($count==50);
+        }
 
 }
