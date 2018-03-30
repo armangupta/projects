@@ -47,4 +47,7 @@ class CarsTest extends TestCase
     public function testCarYear(){
         $user=Cars::find(6);
 $this->assertInternalType(IsType::TYPE_INT,$user->year);    }
+    public function testModelType(){
+        $user=Cars::find(9);
+        $this->assertInternalType(IsType::TYPE_STRING,$user->model);    }
 }
