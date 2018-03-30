@@ -11,7 +11,6 @@
 </main>
 @include('includes.jsfooter')
 <footer>
-
     @include('includes.footer')
 </footer>
 </div>
