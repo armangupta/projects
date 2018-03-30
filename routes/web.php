@@ -19,3 +19,7 @@ Route::get('/thanks/{name}', 'PagesController@thanks')->name('thanks');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
